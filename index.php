@@ -15,6 +15,8 @@ $word = $_GET['word'];
 	<title>PHP Badwords Show</title>
 </head>
 <body>
-	
+	<p>Il testo inserito è:</p>
+	<p><?= $text ?></p>
+	<p>ed è lungo <?= strlen(trim($text)) ?> caratteri.</p>
 </body>
 </html>
