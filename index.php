@@ -24,11 +24,14 @@ $censoredtext = str_replace($word, '***', $text, $count);
 		<span> caratteri.</span>
 	</div>
 	<div class="censored">
-		<h2>Il testo censurato è:</h2>
+		<h2>Il testo censurato (*** al posto di '<?=$word?>') è:</h2>
 		<p><?= $censoredtext ?></p>
+		<h2>Lunghezza:</h2>
+		<span class="chars"><?= strlen(trim($censoredtext)) ?></span>
 		<h2>Sostituzioni effettuate:</h2>
 		<span class="chars"><?= $count ?></span>
 		<span> sostizioni.</span>
 	</div>
+	<p></p>
 </body>
 </html>
