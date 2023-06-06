@@ -6,17 +6,26 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>PHP Badwords</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 	<form action="index.php">
-		<label for="text">Inserisci un testo:</label>
-		<textarea name="text" id="text" cols="30" rows="10">
-		</textarea>
-		<label for="word">Parola da censurare:</label>
-		<input type="text" name="word" id="word">
-		<button>Invia</button>
-		<button>Cancella</button>
+		<div class="flex-elements">
+			<div class="area">
+				<label for="text">Inserisci un testo:</label>
+				<textarea name="text" id="text" cols="30" rows="10">
+				</textarea>
+			</div>
+			<div class="censor">
+				<label for="word">Parola da censurare:</label>
+				<input type="text" name="word" id="word">
+			</div>
+		</div>
+		<div class="buttons">
+			<button>Invia</button>
+			<button>Cancella</button>
+		</div>
 	</form>
 </body>
 

@@ -2,6 +2,7 @@
 $text = $_GET['text'];
 $word = $_GET['word'];
 
+
 ?>
 
 
